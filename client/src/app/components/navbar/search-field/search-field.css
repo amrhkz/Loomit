@@ -1,0 +1,85 @@
+.search-area .search-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.search-menu-wrapper {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+}
+
+.search-menu-wrapper.open {
+  max-height: 500px;
+}
+
+.search-menu {
+  background: var(--background-2);
+  padding: 48px 24px 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-area .search-menu .search-menu-content {
+  width: 100%;
+  max-width: 874px;
+}
+
+.search-area .search-menu .search-menu-content .search-field {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--card);
+  border-radius: 24px;
+  padding: 0 12px;
+  height: 28px;
+}
+
+.search-area .search-menu .search-menu-content .search-field input {
+  width: 100%;
+  outline: none;
+  background: transparent;
+  color: var(--text);
+}
+
+.search-area .search-menu .search-menu-content .hot-search {
+  display: flex;
+  gap: 75px;
+  margin-top: 24px;
+}
+
+.search-area .search-menu .search-menu-content .hot-search .title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 100%;
+  font-size: 12px;
+}
+
+.search-area .search-menu .search-menu-content .hot-search .title i {
+  color: var(--primary-2);
+}
+
+.search-area .search-menu .search-menu-content .hot-search ul {
+  list-style-type: disc;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.search-area .search-menu .search-menu-content .hot-search ul li {
+  color: var(--text);
+}
+
+.search-area .search-menu .search-menu-content .hot-search ul li::marker {
+  color: var(--primary-2);
+}

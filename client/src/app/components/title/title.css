@@ -1,0 +1,12 @@
+.title-x {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text);
+}
+.title-x .shape {
+  width: 3px;
+  height: 24px;
+  border-radius: 12px;
+  background: var(--primary-1);
+}

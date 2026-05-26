@@ -1,0 +1,98 @@
+.products {
+  display: flex;
+  flex-direction: column;
+}
+.products > .title {
+  margin-bottom: 36px;
+  color: var(--text);
+}
+.products .title .top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.products .title .top .fav-products {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.products .title .top .fav-products .shape {
+  width: 4px;
+  height: 24px;
+  background: var(--primary-1);
+}
+.products .title .top .all-products {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.products .title .top .all-products i{
+  color: var(--primary-2);
+}
+.products .title .select {
+  display: flex;
+  gap: 12px;
+}
+.products .title .select .select-item {
+  padding: 4px 16px;
+  border-radius: 25px;
+  color: var(--button--outline--default-text);
+  font-size: 12px;
+  font-weight: bold;
+  border: 1px solid var(--button--outline--default-border);
+}
+.products .title .select .select-item.active {
+  background: var(--button--contained--default-background);
+  color: #fff;
+}
+.products .carousel .swiper .swiper-slide {
+  max-width: 185px;
+}
+.products .carousel .swiper .swiper-slide .product-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 245px;
+  background: var(--card);
+  border-radius: 6px;
+  color: var(--text);
+  overflow: hidden;
+}
+.products .carousel .swiper .swiper-slide .product-item .rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--border-primary);
+  border-radius: 25px;
+  width: fit-content;
+  padding: 3px 6px;
+  font-size: 10px;
+  position: absolute;
+  right: 6px;
+  top: 6px;
+}
+.products .carousel .swiper .swiper-slide .product-item img {
+  width: 100%;
+}
+.products .carousel .swiper .swiper-slide .product-item .price-section{
+  height: 100%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.products .carousel .swiper .swiper-slide .product-item .title {
+  font-size: 12px;
+}
+.products .carousel .swiper .swiper-slide .product-item .price {
+  font-size: 12px;
+}
+.products .carousel .swiper .swiper-slide .product-item .price span {
+  font-size: 16px;
+}

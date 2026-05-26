@@ -1,0 +1,11 @@
+.category-2 {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.category-2 .category-item {
+  width: 100%;
+}
+.category-2 .category-item img {
+  width: 100%;
+}

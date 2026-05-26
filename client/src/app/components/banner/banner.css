@@ -1,0 +1,64 @@
+.banner {
+  padding-top: 64px;
+  display: flex;
+  justify-content: center;
+  background: var(--background-2);
+}
+.banner .banner-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1320px;
+}
+.banner .banner-content >  .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  color: var(--text);
+  padding: 0;
+}
+.banner .banner-content .content > h5 {
+  margin-bottom: 3px;
+}
+.banner .banner-content .content > h1 {
+  margin-bottom: 32px;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.banner .banner-content .content .search-field {
+  display: flex;
+  align-items: center;
+  border-radius: 24px;
+  height: 40px;
+  border: 1px solid var(--card);
+  background: var(--card);
+  padding: 0 6px;
+}
+.banner .banner-content .content .search-field .icon {
+  width: 32px;
+  height: 32px;
+  background: black;
+  border-radius: 50px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner .banner-content .content .search-field input {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px 0 0 24px;
+  border: none;
+  padding: 0 12px;
+  outline: none;
+}
+.banner .banner-content .image {
+  width: 50%;
+}
+.banner .banner-content .image img {
+  object-fit: contain;
+  width: 100%;
+}

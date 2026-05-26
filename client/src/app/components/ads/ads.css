@@ -1,0 +1,26 @@
+.seperator {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.seperator .title{
+  min-width: max-content;
+  color: var(--border-secondary);
+  font-size: 12px;
+  cursor: pointer;
+}
+.seperator .line {
+  height: 1px;
+  width: 100%;
+  background: var(--border-primary);
+}
+.ads {
+  display: flex;
+  gap: 24px;
+}
+.ads .ads-item {
+  width: 100%;
+}
+.ads .ads-item img {
+  width: 100%;
+}

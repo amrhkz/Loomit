@@ -1,0 +1,49 @@
+.category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text);
+}
+.category .content .title {
+  display: flex;
+  gap: 6px;
+}
+.category .content .shape {
+  height: 20px;
+  width: 4px;
+  background: var(--primary-1);
+}
+.category .carousel {
+  position: relative;
+  width: 75%;
+}
+.category .carousel .swiper {
+  max-width: 100%;
+  height: 100%;
+}
+
+.category .carousel .swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 120px;
+}
+.category .carousel .swiper .swiper-slide .category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  height: 100px;
+  width: 100%;
+  font-size: 13px;
+  cursor: pointer;
+}
+.category .carousel .swiper .swiper-slide .category-item img {
+  height: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .category {
+    display: flex;
+    flex-direction: column;
+  }
+}

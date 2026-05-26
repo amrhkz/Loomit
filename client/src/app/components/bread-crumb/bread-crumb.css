@@ -1,0 +1,20 @@
+.bread-crumb {
+  display: flex;
+  color: var(--text);
+  font-size: 12px;
+  width: 100%;
+  max-width: 1320px;
+}
+.bread-crumb .bread-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.bread-crumb .bread-item .bread-item-content{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.bread-crumb .bread-item .last-item {
+  color: var(--primary-1);
+}

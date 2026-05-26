@@ -1,0 +1,120 @@
+.compare {
+  display: flex;
+  flex-direction: column;
+}
+.compare > .title {
+  margin-bottom: 36px;
+}
+.compare .title .top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.compare .title .top .fav-products {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.compare .title .top .fav-products .shape {
+  width: 4px;
+  height: 24px;
+  background: var(--primary-1);
+}
+.compare .title .top .all-products {
+  display: flex;
+  align-items: center;
+}
+.compare .title .select {
+  display: flex;
+  gap: 12px;
+}
+.compare .title .select .select-item {
+  padding: 4px 16px;
+  border-radius: 25px;
+  color: var(--button--outline--default-text);
+  font-size: 12px;
+  font-weight: bold;
+  border: 1px solid var(--button--outline--default-border);
+}
+.compare .title .select .select-item.active {
+  background: var(--button--contained--default-background);
+  color: #fff;
+}
+.compare .carousel .swiper .swiper-slide .product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: var(--card);
+  border-radius: 6px;
+  color: var(--text);
+  padding-bottom: 16px;
+  cursor: pointer;
+}
+.compare .carousel .swiper .swiper-slide .product-item .top {
+  display: flex;
+  justify-content: space-between;
+}
+.compare .carousel .swiper .swiper-slide .product-item .top-right {
+  position: relative;
+}
+.compare .carousel .swiper .swiper-slide .product-item .rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--border-primary);
+  color: var(--success1);
+  border-radius: 25px;
+  width: fit-content;
+  padding: 3px 6px;
+  font-size: 10px;
+  position: absolute;
+  right: 6px;
+  top: 6px;
+}
+.compare .carousel .swiper .swiper-slide .product-item img {
+  width: 100%;
+}
+.compare .carousel .swiper .swiper-slide .product-item .price-section {
+  height: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+.compare .carousel .swiper .swiper-slide .product-item .price-section .detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 144px;
+  gap: 12px;
+}
+.compare .carousel .swiper .swiper-slide .product-item .title {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+.compare .carousel .swiper .swiper-slide .product-item .price {
+  font-size: 12px;
+}
+.compare .carousel .swiper .swiper-slide .product-item .price span {
+  font-size: 16px;
+}
+.compare .carousel .swiper .swiper-slide .product-item button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 16px;
+  font-size: 12px;
+  width: 124px;
+  height: 32px;
+  padding: 4px 16px;
+  border: 1px solid var(--black-5);
+  background: none;
+  color: var(--text);
+  cursor: pointer;
+}
+.compare .carousel .swiper .swiper-slide .product-item button i {
+  color: var(--primary-2);
+}

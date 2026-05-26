@@ -1,0 +1,56 @@
+.second-nav {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid var(--grey-6);
+  border-bottom: 1px solid var(--grey-6);
+  background: var(--background-2);
+  padding: 16px 0;
+  position: sticky;
+  top: 64px;
+  z-index: 5;
+}
+.second-nav .second-nav-content {
+  width: 100%;
+  max-width: 1320px;
+  display: flex;
+  gap: 40px;
+}
+
+.second-nav .nav-items-wrapper {
+  position: relative;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.second-nav .second-nav-content .product-detail {
+  align-items: center;
+  gap: 24px;
+}
+.second-nav .second-nav-content .product-detail img {
+  width: 78px;
+  height: 52px;
+}
+.second-nav .second-nav-content .product-detail .price {
+  display: flex;
+  flex-direction: column;
+}
+.second-nav .second-nav-content .second-nav-item {
+  padding: 12px 20px;
+  cursor: pointer;
+  position: relative;
+  font-size: 13px;
+  white-space: nowrap;
+  transition: color 0.3s;
+}
+.second-nav .second-nav-content .second-nav-item.active {
+  color: var(--primary-2);
+}
+.indicator {
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  background: var(--primary-2);
+  transition: left 0.3s ease, width 0.3s ease;
+  border-radius: 12px;
+}

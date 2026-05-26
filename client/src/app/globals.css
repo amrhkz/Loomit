@@ -1,0 +1,186 @@
+@import "tailwindcss";
+/* ------------------------------------------------------------ Public Styles */
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap");
+@font-face {
+  font-family: "IranSans";
+  src: url("/font/IranSans/woff/IRANSansWeb.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IranSansNum";
+  src: url("/font/IranSans/woff/IRANSansWeb(FaNum).woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+html{
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-family: "IranSans";
+  font-family: "IranSansNum";
+  direction: rtl;
+}
+:root {
+  --text: #383e43;
+  --text-hover: #e4002b;
+  --background-1: #f9f9f9;
+  --background-2: #ffffff;
+  --card: #ffffff;
+  --primary-1: #e4002b;
+  --primary-3: #000000;
+  --purple: #ff9900;
+  --success1: #0fa862;
+  --success2: #0fa862;
+  --warning1: #ff9900;
+  --error: #e4002b;
+  --info: #3d85b7;
+  --info2: #3d85b7;
+  --black-1: #000000;
+  --black-3: #32323c;
+  --black-5: #eeeeee;
+  --grey-1: #7d7d87;
+  --grey-3: #afafb6;
+  --grey-5: #afafb6;
+  --grey-6: #eeeeee;
+  --grey-7: #f9f9f9;
+  --white: #ffffff;
+  --elevation: #383e4330;
+  --border-primary: #eeeeee;
+  --border-secondary: #afafb6;
+  --header--header-background: #ffffff;
+  --header--mobile-title-background: #f9f9f9;
+  --header--zoomit-typography: #32323c;
+  --header--zoomit-logo: #e4002b;
+  --header--menu-link: #383e43;
+  --header--search-icon-background: #32323c;
+  --header--search-icon: #ffffff;
+  --single-article--header-background: #ffffff;
+  --button--contained--default-text: #ffffff;
+  --button--contained--default-background: #32323c;
+  --button--contained--default-border: #32323c;
+  --button--contained--default-icon: #e4002b;
+  --button--outline--default-text: #383e43;
+  --button--outline--default-border: #eeeeee;
+  --button--outline--default-icon: #e4002b;
+  --button--text--default-text: #383e43;
+  --button--contained--secondary-text: #383e43;
+  --button--contained--secondary-background: #ffffff;
+  --button--contained--secondary-border: #ffffff;
+  --button--outline--secondary-text: #383e43;
+  --button--outline--secondary-border: #eeeeee;
+  --button--text--secondary-text: #ffffff;
+  --button--contained--primary-text: #ffffff;
+  --button--contained--primary-background: #e4002b;
+  --button--contained--primary-border: #e4002b;
+  --button--outline--primary-text: #383e43;
+  --button--outline--primary-border: #e4002b;
+  --button--text--primary-text: #383e43;
+  --button--contained--text-disable: #afafb6;
+  --button--contained--background-disable: #7d7d87;
+  --button--contained--spinner: #ffffff;
+  --button--contained--spinner-border: #afafb6;
+  --button--outline--text-disable: #afafb6;
+  --button--outline--background-disable: "transparent";
+  --button--outline--spinner: #32323c;
+  --button--outline--spinner-border: #afafb6;
+}
+body.dark {
+  --text: #e8e2d8;
+  --text-hover: #ff6961;
+  --background-1: #202425;
+  --background-2: #1d1f20;
+  --card: #292c2d;
+  --primary-1: #e4002b;
+  --primary-2: #ff6961;
+  --primary-3: #000000;
+  --success1: #0fa862;
+  --success2: #0fa862;
+  --warning1: #ff9900;
+  --error: #ff6961;
+  --info: #3d85b7;
+  --info2: #3d85b7;
+  --black-1: #000000;
+  --black-3: #afafb6;
+  --black-5: #4b4b55;
+  --grey-1: #eeeeee;
+  --grey-3: #afafb6;
+  --grey-5: #7a7878;
+  --grey-6: #292c2d;
+  --grey-7: #383737;
+  --white: #ffffff;
+  --elevation: rgba(28, 25, 25, 0.24);
+  --border-primary: #4b4b55;
+  --border-secondary: #7a7878;
+  --header--header-background: #1d1f20;
+  --header--mobile-title-background: #292c2d;
+  --header--zoomit-typography: #ffffff;
+  --header--zoomit-logo: #ffffff;
+  --header--menu-link: #e8e2d8;
+  --header--search-icon-background: #ffffff;
+  --header--search-icon: #afafb6;
+  --single-article--header-background: #000000;
+  --button--contained--default-text: #e8e2d8;
+  --button--contained--default-background: #383737;
+  --button--contained--default-border: #383737;
+  --button--contained--default-icon: #e4002b;
+  --button--outline--default-text: #e8e2d8;
+  --button--outline--default-border: #4b4b55;
+  --button--outline--default-icon: #ff6961;
+  --button--text--default-text: #e8e2d8;
+  --button--contained--secondary-text: #e8e2d8;
+  --button--contained--secondary-background: #383737;
+  --button--contained--secondary-border: #383737;
+  --button--outline--secondary-text: #e8e2d8;
+  --button--outline--secondary-border: #4b4b55;
+  --button--text--secondary-text: #e8e2d8;
+  --button--contained--primary-text: #e8e2d8;
+  --button--contained--primary-background: #e4002b;
+  --button--contained--primary-border: #e4002b;
+  --button--outline--primary-text: #e8e2d8;
+  --button--outline--primary-border: #e4002b;
+  --button--text--primary-text: #e8e2d8;
+  --button--contained--text-disable: #afafb6;
+  --button--contained--background-disable: #383737;
+  --button--contained--spinner: #ffffff;
+  --button--contained--spinner-border: #afafb6;
+  --button--outline--text-disable: #afafb6;
+  --button--outline--background-disable: "transparent";
+  --button--outline--spinner: #afafb6;
+  --button--outline--spinner-border: #383737;
+}
+body {
+  background: var(--background-2);
+  position: relative;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+/* ::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #fff;
+} */
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-1);
+  border-radius: 10px;
+}
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px var(--card) inset !important;
+  -webkit-text-fill-color: var(--primary) !important;
+}
+
+/* ------------------------------------------------------------ Public Styles */

@@ -1,0 +1,23 @@
+.ads-2 {
+  position: relative;
+  padding: 0;
+  max-height: 153px;
+}
+.ads-2 .close-btn {
+  position: absolute;
+  left: 0;
+  background: var(--black-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 3px;
+}
+.ads-2 .ads-pic {
+  height: 100%;
+  padding: 0;
+  width: 100%;
+}
+.ads-2 .ads-pic img {
+  width: 100%;
+}

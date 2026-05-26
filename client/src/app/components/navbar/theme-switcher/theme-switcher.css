@@ -1,0 +1,32 @@
+.theme-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--card);
+  padding: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  z-index: 999;
+}
+
+.theme-dropdown.open {
+  display: flex;
+}
+
+.theme-dropdown button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: none;
+  border: none;
+  text-align: right;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.theme-dropdown button.active {
+  font-weight: bold;
+  color: var(--primary-2);
+}

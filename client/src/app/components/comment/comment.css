@@ -1,0 +1,114 @@
+.comment-item {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--grey-7);
+  padding: 24px;
+  width: 84%;
+}
+.comment-item .comment-top {
+  display: flex;
+  justify-content: space-between;
+}
+.comment-item .menu-toggle {
+  display: flex;
+  cursor: pointer;
+  position: relative;
+}
+.comment-item .menu-toggle .menu {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  background: var(--card);
+  width: 145px;
+  border-radius: 3px;
+  padding: 8px 16px;
+}
+.comment-item .menu-toggle .menu .menu-item {
+  padding: 8px 0;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.comment-item .menu-toggle .menu .menu-item:hover {
+  opacity: 0.8;
+}
+.comment-item .user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.comment-item .user-info .user-img img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+.comment-item .user-info .user-name {
+  font-size: 14px;
+  font-weight: 900;
+  color: var(--text);
+}
+.comment-item .user-info .user-seen {
+  font-size: 12px;
+  font-weight: normal;
+  color: var(--grey-1);
+}
+.comment-item .user-info .user-rate {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 13px;
+  font-weight: normal;
+  color: var(--success1);
+}
+.comment-item .comment-desc {
+  margin-right: 20px;
+  padding-right: 48px;
+  border-right: 1px solid var(--grey-7);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.comment-item .comment-desc .comment-action {
+  display: flex;
+  gap: 12px;
+}
+.comment-item .comment-desc .comment-action .action-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.comment-item .comment-desc .comment-action button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: var(--text);
+  padding: 3px 12px;
+}
+.comment-item .comment-desc .comment-action .action-btn {
+  cursor: pointer;
+}
+
+.comment-list .show-more-btn {
+  background: none;
+  width: fit-content;
+  border-radius: 16px;
+  font-size: 12px;
+  height: 32px;
+  padding: 4px 16px;
+  border: 1px solid var(--black-5);
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-top: 24px;
+}
+.comment-list .show-more-btn:hover{
+  opacity: 0.8;
+}
+.comment-list .show-more-btn i{
+  color: var(--primary-2);
+}
